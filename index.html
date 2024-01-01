@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allocation Analyser</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.raf.mod.uk/sites/raf-beta/themes/raf-beta/assets/dist/images/raf-logo-reversed-203f876f8b.png" alt="Royal Air Force logo" class="logo" />
+    </div>
+    <div>
+        <h1>RAF Allocation Analyser</h1>
+    </div>
+
+
+    <form onsubmit="event.preventDefault(); findTopRunways();">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" placeholder="Enter Country" autocomplete="country">
+    
+        <label for="aircraftType">Aircraft Type:</label>
+        <input type="text" id="aircraftType" placeholder="Enter Aircraft Type" autocomplete="aircrafttype">
+        
+        <button onclick="findTopRunways()">Search</button>
+    </form>
+    <h2> Top 3 Runways:</h2>
+
+    <div id="runwayResults"></div>
+
+<script src="runwaytool.js"></script>
+<footer>
+    <p>© 2023 RAF Challenge - Melissa</p>
+  </footer>
+</body>
+</html>
